@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生体模倣筋骨格ロボット研究</title>
+    <link rel="stylesheet" href="biorogic.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">8</span>
+        </div>
+
+        <!-- スライド1: タイトル -->
+        <div class="slide active">
+            <h1>生体模倣筋骨格ロボット研究</h1>
+            <div class="research-card">
+                <h3>人工筋を用いた犬の後肢筋骨格系模倣</h3>
+                <p>筋膜の拘束効果が動作に与える影響の検証</p>
+            </div>
+            <div class="research-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <h3>柔軟ラティス構造を活用したワイヤ駆動人工筋肉</h3>
+                <p>筋骨格上腕構造の構成と動作検証</p>
+            </div>
+            <div class="highlight">
+                <p><strong>研究の意義：</strong> 動物らしい自然な動作の実現による Human-Robot Interaction の向上</p>
+            </div>
+        </div>
+
+        <!-- スライド2: 研究1概要 -->
+        <div class="slide">
+            <h2>研究1：犬の後肢筋骨格系模倣</h2>
+            
+            <div class="two-column">
+                <div class="method-box">
+                    <h3><span class="icon"><img src="icon_01.png" alt="#"></span>研究目的</h3>
+                    <ul>
+                        <li>犬の後肢筋骨格系をMcKibben型空圧人工筋で再現</li>
+                        <li>筋膜による拘束の有無が動作に与える影響を検証</li>
+                        <li>動物らしい動作でHRI好感度向上を目指す</li>
+                    </ul>
+                </div>
+                
+                <div class="result-box">
+                    <h3><span class="icon"><img src="icon_02.png" alt="#"></span>独創的な点</h3>
+                    <ul>
+                        <li>筋膜の拘束効果を3段階で比較検証</li>
+                        <li>McKibben型空圧人工筋の活用</li>
+                        <li>筋膜が動作生成に与える影響の定量評価</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <p><strong>実験設計：</strong> 中型犬の実寸大骨格を3Dプリントし、主要な屈筋・伸筋を人工筋で再現</p>
+            </div>
+        </div>
+
+        <!-- スライド3: 研究1結果 -->
+        <div class="slide">
+            <h2>研究1：実験結果と考察</h2>
+            
+            <h3>3つの拘束条件による比較実験</h3>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>拘束条件</th>
+                        <th>動作の特徴</th>
+                        <th>関節角度の変化</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>拘束なし</strong></td>
+                        <td>筋肉が骨から離れ、動作不能な筋あり</td>
+                        <td>小さい</td>
+                    </tr>
+                    <tr>
+                        <td><strong>局所拘束</strong></td>
+                        <td>一部改善、動作に制限あり</td>
+                        <td>中程度</td>
+                    </tr>
+                    <tr>
+                        <td><strong>全体拘束</strong></td>
+                        <td>最も動物らしい動作を実現</td>
+                        <td>最大変化量を記録</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight">
+                <p><strong>結論：</strong> 筋膜のような拘束構造は単なる補助構造ではなく、動作生成における重要な要素である</p>
+            </div>
+        </div>
+
+        <!-- スライド4: 研究2概要 -->
+        <div class="slide">
+            <h2>研究2：柔軟ラティス構造人工筋肉</h2>
+            
+            <div class="two-column">
+                <div class="method-box">
+                    <h3><span class="icon"><img src="icon_01.png" alt="#"></span>研究目的</h3>
+                    <ul>
+                        <li>ワイヤ駆動型筋骨格ロボットの課題解決</li>
+                        <li>柔軟ラティス構造による新しい人工筋肉設計</li>
+                        <li>面状・多自由度筋肉としての活用</li>
+                    </ul>
+                </div>
+                
+                <div class="result-box">
+                    <h3><span class="icon"><img src="icon_02.png" alt="#"></span>独創的な点</h3>
+                    <ul>
+                        <li>TPU製柔軟ラティス構造を3Dプリント</li>
+                        <li>収縮方向に柔軟、他方向に剛性を実現</li>
+                        <li>面状・分岐構造など多様な筋形状を再現</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <p><strong>技術革新：</strong> 従来困難だったワイヤの露出・経路変化・筋形状再現性の問題を解決</p>
+            </div>
+        </div>
+
+        <!-- スライド5: 研究2方法と実験 -->
+        <div class="slide">
+            <h2>研究2：実験方法と構造</h2>
+            
+            <h3><span class="icon"></span>実験設計</h3>
+            <div class="two-column">
+                <div class="method-box">
+                    <h3>人工筋の種類</h3>
+                    <ul>
+                        <li>単筋（基本収縮動作）</li>
+                        <li>2自由度面状筋</li>
+                        <li>分岐構造筋</li>
+                        <li>複合筋構造</li>
+                    </ul>
+                </div>
+                
+                <div class="result-box">
+                    <h3>上腕構造の構築</h3>
+                    <ul>
+                        <li>上腕二頭筋の模倣</li>
+                        <li>三角筋の再現</li>
+                        <li>大胸筋の構造化</li>
+                        <li>相互作用の検証</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <p><strong>性能テスト：</strong> 10kgの重りを持ち上げる収縮力を確認、多様な姿勢制御を実現</p>
+            </div>
+        </div>
+
+        <!-- スライド6: 研究2結果 -->
+        <div class="slide">
+            <h2>研究2：実験結果</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>評価項目</th>
+                        <th>結果</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>単体筋の収縮</strong></td>
+                        <td>柔軟に変形し、10kgの重りを持ち上げ可能</td>
+                    </tr>
+                    <tr>
+                        <td><strong>面状筋の動作</strong></td>
+                        <td>2自由度の動作（片側収縮・両側収縮）を確認</td>
+                    </tr>
+                    <tr>
+                        <td><strong>上腕構造の動作</strong></td>
+                        <td>各筋が相互に作用しながら安定動作を実現</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ワイヤ経路の拘束</strong></td>
+                        <td>ラティス構造により収縮方向以外の変形を抑制</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight">
+                <p><strong>成果：</strong> 筋肉としての形状・動作再現性が大幅に向上、より生体模倣性の高い筋骨格ロボットへの応用が期待</p>
+            </div>
+        </div>
+
+        <!-- スライド7: まとめと今後の展望 -->
+        <div class="slide">
+            <h2>まとめと今後の展望</h2>
+            
+            <div class="two-column">
+                <div class="method-box">
+                    <h3><span class="icon"></span>主要成果</h3>
+                    <ul>
+                        <li><strong>筋膜の重要性：</strong> 拘束構造が動作生成に不可欠</li>
+                        <li><strong>柔軟ラティス：</strong> 新しい人工筋肉設計手法</li>
+                        <li><strong>生体模倣性：</strong> より自然な動作の実現</li>
+                        <li><strong>技術革新：</strong> 従来課題の解決</li>
+                    </ul>
+                </div>
+                
+                <div class="result-box">
+                    <h3><span class="icon"></span>今後の展望</h3>
+                    <ul>
+                        <li>四足歩行ロボットへの応用</li>
+                        <li>Human-Robot Interactionの向上</li>
+                        <li>医療・介護分野での活用</li>
+                        <li>より複雑な筋骨格系の再現</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="research-card" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                <h3> <img src="icon_03.png" alt="#">研究の意義</h3>
+                <p>生体模倣筋骨格ロボットは、人間との自然な相互作用を可能にし、<br>
+                次世代ロボティクスの基盤技術として大きな可能性を秘めています</p>
+            </div>
+        </div>
+
+        <!-- スライド8: 空白スライド -->
+        <div class="slide" style="display: flex; justify-content: center; align-items: center;">
+            <h1 style="color: black; text-align: center; font-size: 5em;">fin</h1>
+        </div>
+
+        <!-- スライド数を更新 -->
+        <script>
+            document.getElementById('total-slides').textContent = slides.length + 1;
+        </script>
+
+        <!-- ナビゲーション -->
+        <div class="navigation">
+            <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">← 前へ</button>
+            <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">次へ →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('total-slides').textContent = totalSlides;
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+            
+            // ナビゲーションボタンの状態更新
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+        
+        function changeSlide(n) {
+            if (currentSlide + n >= 0 && currentSlide + n < totalSlides) {
+                showSlide(currentSlide + n);
+            }
+        }
+        
+        // キーボードナビゲーション
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+        
+        // 初期状態設定
+        showSlide(0);
+    </script>
+</body>
+</html>
